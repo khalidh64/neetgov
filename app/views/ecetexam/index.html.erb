@@ -10,6 +10,9 @@
       border:2px;
       border-radius: 5px;
       }
+h1{
+  font-size: 32px;
+}
 </style>
 
   <div class="container"><br>
@@ -43,7 +46,7 @@
   </div>
   
   <div class="panel panel-default">
-    <div class="panel-body"><%= q.question.html_safe %><br>
+    <div class="panel-body"><h1><%= q.question.html_safe %></h1><br>
       <% if q.questionimage? %>
         <div class="row">
           <div class="col-sm-8">
@@ -410,12 +413,12 @@
   }, 1000);
 </script>
 <style type="text/css">
-               .marleft{
-                  margin-left:-100px;
-                }
-               @media only screen and (max-width: 800px){
-                .marleft{
-                  margin-left: 0px;
-                }
-              }
-            </style>
+  .marleft{
+    margin-left:-100px;
+  }
+  @media only screen and (max-width: 800px){
+    .marleft{
+      margin-left: 0px;
+    }
+  }
+</style>
