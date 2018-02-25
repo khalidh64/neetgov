@@ -6,10 +6,14 @@
 # you're free to overwrite the RESTful controller actions.
 module Admin
   class ApplicationController < Administrate::ApplicationController
+ 
+    before_action :authenticate_user!
+    before_action :check_admin
     before_action :authenticate_admin
-
     def authenticate_admin
-      # TODO Add authentication logic here.
+      if authenticate_user!
+        redirect_to(root_path) unless current_user.email == "khalidhmhd@gmail.com" || current_user.email == "apsbtetworld@gmail.com"
+      end
     end
 
     # Override this value to specify the number of elements to display at a time
