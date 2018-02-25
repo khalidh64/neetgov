@@ -52,6 +52,8 @@ class LivetestDashboard < Administrate::BaseDashboard
     :testcount,
     :status,
     :key,
+    :created_at,
+    :updated_at
   ].freeze
 
   # Overwrite this method to customize how livetests are displayed
