@@ -36,7 +36,7 @@ gem 'rolify', '~> 5.1'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'carrierwave', '~> 1.0'
 gem 'simple_form'
-gem 'passenger', '~> 5.0', '>= 5.0.30'
+gem 'passenger', '~> 5.3'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem "administrate"
 gem 'will_paginate', '~> 3.1.0'
